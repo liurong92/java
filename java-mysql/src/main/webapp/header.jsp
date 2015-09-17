@@ -4,7 +4,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" href="../css/index.css" type="text/css">
+  <link rel="stylesheet" href="./css/index.css" type="text/css">
+  <link rel="stylesheet" href="./css/register.css" type="text/css">
+  <link rel="stylesheet" href="./css/userProfile.css" type="text/css">
+  <link rel="stylesheet" href="./css/userOrder.css" type="text/css">
     <title>java-mysql</title>
 </head>
 <body>

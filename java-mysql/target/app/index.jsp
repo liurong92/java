@@ -1,21 +1,30 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="views/header.jsp"%>
+<%@include file="header.jsp"%>
+<div>
     <div>
-        <div>
-            <div>
-                <div>欢迎登录</div>
+        <form action="/userProfile" method="post">
+            <div class="login">
+                <div class="head">
+                    欢迎登录
+                </div>
                 <div>
                     <label>用户名：</label>
-                    <input type="text" name="userName" placeholder="请输入用户名">
+                    <input type="text" name="userName" placeholder="请输入用户名" class="login-text" id="userName">
                 </div>
                 <div>
                     <label>密&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
-                    <input type="password" name="password" placeholder="请输入用户名">
+                    <input type="password" name="password" placeholder="请输入用户名" class="login-text" id="password">
                 </div>
                 <div>
-                    <input type="submit" value="登录">
+                    <div>
+                        <a href="register" class="register">免费注册</a>
+                    </div>
+                    <div>
+                        <input type="submit" class="button" value="登陆" id="login">
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
-<%@include file="views/footer.jsp"%>
+</div>
+<%@include file="footer.jsp"%>
