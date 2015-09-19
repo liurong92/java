@@ -32,8 +32,4 @@ public class GraphMapperControl {
         }
         return Long.toString(totalDistance);
     }
-
-    public String[] splitInput(String input) {
-        return input.trim().split(", ");
-    }
 }
