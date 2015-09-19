@@ -16,5 +16,6 @@ public class GraphMapperMapperControlTest {
         assertThat(graphMapperControl.getTotalDistance(graphMapper, "AD"), is("5"));
         assertThat(graphMapperControl.getTotalDistance(graphMapper, "ADC"), is("13"));
         assertThat(graphMapperControl.getTotalDistance(graphMapper, "ABC"), is("9"));
+        assertThat(graphMapperControl.getTotalDistance(graphMapper, "AEBCD"), is("22"));
     }
 }
