@@ -21,14 +21,18 @@ public class GraphMapperControl {
         return graphMapper;
     }
 
-    public String getTotalDistance(GraphMapper graphMapper, String path){
+    public String getTotalDistance(GraphMapper graphMapper, String path)  {
         long totalDistance = 0;
         char[] pathArray = path.toCharArray();
-        String start = String.valueOf(pathArray[0]);
 
-        for(int i = 1; i < pathArray.length; i++) {
-            totalDistance += graphMapper.getDistance(start, String.valueOf(pathArray[i]));
-            start = String.valueOf(pathArray[i]);
+        try {
+            String start = String.valueOf(pathArray[0]);
+            for(int i = 1; i < pathArray.length; i++) {
+                totalDistance += graphMapper.getDistance(start, String.valueOf(pathArray[i]));
+                start = String.valueOf(pathArray[i]);
+            }
+        } catch (NoSuchRouteException e) {
+            return e.getMessage();
         }
         return Long.toString(totalDistance);
     }

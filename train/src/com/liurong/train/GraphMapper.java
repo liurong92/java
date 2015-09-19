@@ -42,7 +42,11 @@ public class GraphMapper {
         return graphMapper.get(startNode);
     }
 
-    public long getDistance(String startNode, String endNode) {
-        return graphMapper.get(startNode).get(endNode);
+    public long getDistance(String startNode, String endNode) throws NoSuchRouteException {
+        try {
+            return graphMapper.get(startNode).get(endNode);
+        } catch (Exception e) {
+            throw new NoSuchRouteException("No Such Route");
+        }
     }
 }
