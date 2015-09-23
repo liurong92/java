@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - threeDB@localhost" uuid="e072b9a7-1329-405e-8bca-9fd1b93edfa7">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>threeDB.*</schema-pattern>
+      <default-schemas>threeDB.*</default-schemas>
+    </data-source>
+  </component>
+</project>
