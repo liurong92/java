@@ -39,8 +39,9 @@ public class UserController {
     @RequestMapping(value = "/addUser", method = RequestMethod.POST)
     public ModelAndView addUser(@RequestParam String userName, String password, String trueName,
                           int userAge, String email, String address) {
-        System.out.println(userName);
+        System.out.println(password);
         System.out.println(email);
+        System.out.println(userAge);
 
         userService.addUser(new User(userName, password, trueName, userAge, email, address));
         return new ModelAndView("redirect:/register");

@@ -15,15 +15,15 @@
         <div class="head">
           欢迎注册
         </div>
-        <form action="addUser" method="post">
+        <form action="/addUser" method="post">
           <div>
             <div>
               <label>用&nbsp;&nbsp;户&nbsp;&nbsp;名：</label>
-              <input type="text" name="userName" placeholder="请输入用户名" class="login-text" id="register-userName">*
+              <input type="text" name="userName" placeholder="请输入用户名" class="login-text">*
             </div>
             <div>
               <label>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
-              <input type="password" name="password" placeholder="请输入密码" class="login-text" id="register-password">*
+              <input type="password" name="password" placeholder="请输入密码" class="login-text">*
             </div>
             <div class="password-message">
               长度不能少于6位
