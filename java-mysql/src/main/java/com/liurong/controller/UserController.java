@@ -8,6 +8,7 @@ import org.apache.xpath.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -25,8 +26,9 @@ public class UserController {
     private ProductService productService;
 
     @RequestMapping(value = "/userProfile", method = RequestMethod.GET)
-    public String login(Model model,@RequestParam String userName, String password){
+    public String login(ModelMap model,@RequestParam String userName, String password){
         User user = userService.login(userName);
+        System.out.println(user+"asdfsadf");
         if(user.getPassword().equals(password)) {
             List<Product> products = productService.getProducts();
             model.addAttribute("products", products);

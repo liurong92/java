@@ -92,6 +92,24 @@
       <artifactId>standard</artifactId>
       <version>1.1.2</version>
     </dependency>
+    <dependency>
+      <groupId>com.opensymphony</groupId>
+      <artifactId>xwork</artifactId>
+      <version>2.1.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>4.3.10.Final</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <version>1.10.19</version>
+    </dependency>
 
 
   </dependencies>
